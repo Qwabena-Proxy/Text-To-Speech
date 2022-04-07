@@ -25,18 +25,8 @@
         cursor:pointer;
       }
     </style>
-  </head> 
-  <body bgcolor="black">
-    <div class="input">
-      <textarea placeholder="Enter Text...." id="tts" rows="10" cols="50">
-      </textarea>
-    </div>
-    <br>
-    <br>
-    <button onclick="ttaudio()" class = "btn">
-      Speak
-    </button>
-    <script>
+    
+     <script>
       fuction ttaudio(){
         let msg = document.getElementById("tts").value;
         let speech = new SpeechSynthesisUtterance();
@@ -48,5 +38,16 @@
         window.speechSynthesis.speak(speech);
       }
     </script>
+  </head> 
+  <body bgcolor="black">
+    <div class="input">
+      <textarea placeholder="Enter Text...." id="tts" rows="10" cols="50">
+      </textarea>
+    </div>
+    <br>
+    <br>
+    <button onclick="ttaudio()" class = "btn">
+      Speak
+    </button
   </body>
 </html>
