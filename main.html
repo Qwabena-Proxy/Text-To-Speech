@@ -36,5 +36,13 @@
     <button onclick="ttaudio()" class = "btn">
       Speak
     </button>
+    <script>
+      fuction ttaudio(){
+        let msg = document.getElementById("tts").value;
+        let speech = new SpeechSynthesisUtterance();
+        speech.lang = "en-IN";
+        speech.text = msg;
+      }
+    </script>
   </body>
 </html>
